@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header,
+nav,
+main,
+footer {
+    padding: 20px;
+    margin: 10px;
+}
+
+header {
+    background: #f8f9fa;
+    text-align: center;
+    border-bottom: 2px solid #e9ecef;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+    padding: 20px 0;
+}
+
+nav {
+    text-align: center;
+    background: #343a40;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background: #495057;
+    border-radius: 5px;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+main section {
+    background: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    color: #007bff;
+}
+
+footer {
+    text-align: center;
+    background: #f8f9fa;
+    padding: 10px;
+    border-top: 2px solid #e9ecef;
+}
+
+@media (max-width: 768px) {
+
+    header,
+    nav,
+    main,
+    footer {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+#conversion {
+    text-align: center;
+}
+
+#conversion label,
+#conversion input,
+#conversion select,
+#conversion button {
+    margin: 10px 0;
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#conversion input,
+#conversion select {
+    padding: 10px;
+    font-size: 1em;
+}
+
+#conversion button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+#conversion button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Measurement</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Temperature and Its Measurement</h1>
+    </header>
+
+    <main>
+        <section id="theory">
+            <h2>Theory of Temperature</h2>
+            <p>Temperature is a measure of the average kinetic energy of the particles in a system. It is an important
+                concept in physics and everyday life because it determines the direction of heat transfer. Heat always
+                flows from a body at a higher temperature to one at a lower temperature.</p>
+            <p>There are three common temperature scales: Celsius (°C), Fahrenheit (°F), and Kelvin (K). The Celsius
+                scale is based on the freezing and boiling points of water, which are 0°C and 100°C respectively. The
+                Fahrenheit scale sets the freezing point of water at 32°F and the boiling point at 212°F. The Kelvin
+                scale, used primarily in scientific contexts, starts at absolute zero, the theoretical point where all
+                molecular motion stops, which is 0 K, equivalent to -273.15°C.</p>
+            <p>Temperature is a fundamental parameter in thermodynamics, a branch of physics that deals with heat and
+                temperature and their relation to energy and work. The laws of thermodynamics describe how energy moves
+                and changes form. The Zeroth Law of Thermodynamics states that if two systems are each in thermal
+                equilibrium with a third system, they are in thermal equilibrium with each other, which allows for the
+                definition of temperature.</p>
+        </section>
+
+        <section id="methods">
+            <h2>Methods to Measure Temperature</h2>
+            <ul>
+                <li><strong>Thermometers:</strong> The most common instruments for measuring temperature, thermometers
+                    can be liquid-in-glass (mercury or alcohol), digital, or infrared.</li>
+                <li><strong>Thermocouples:</strong> These are widely used in industrial applications. A thermocouple
+                    consists of two different types of metals joined together at one end. When the junction of the two
+                    metals is heated or cooled, it produces a voltage that can be correlated back to temperature.</li>
+                <li><strong>Infrared Sensors:</strong> These measure the infrared radiation emitted by an object. They
+                    are useful for measuring temperature from a distance, especially in situations where a traditional
+                    thermometer cannot be used.</li>
+                <li><strong>Resistance Temperature Detectors (RTDs):</strong> These devices measure temperature by
+                    correlating the resistance of the RTD element with temperature. They are known for their accuracy
+                    and stability over a wide temperature range.</li>
+                <li><strong>Thermistors:</strong> Similar to RTDs, thermistors are temperature-sensitive resistors. They
+                    are made from ceramic materials that exhibit a large change in resistance with temperature, making
+                    them very sensitive.</li>
+                <li><strong>Bimetallic Strips:</strong> Used in some thermostats, these consist of two different metals
+                    bonded together that expand at different rates as they are heated. This causes the strip to bend,
+                    and this bending can be used to measure temperature or activate switches.</li>
+                <li><strong>Liquid Crystal Temperature Sensors:</strong> These contain liquid crystals that change color
+                    based on temperature. They are often used in medical thermometers and other applications where
+                    visual temperature indication is useful.</li>
+            </ul>
+        </section>
+
+        <section id="scales">
+            <h2>Temperature Measuring Scales</h2>
+            <ul>
+                <li>Celsius (°C)</li>
+                <li>Fahrenheit (°F)</li>
+                <li>Kelvin (K)</li>
+            </ul>
+        </section>
+        <section id="conversion">
+            <h2>Temperature Conversion Tool</h2>
+            <label for="temperature">Enter Temperature:</label>
+            <input type="number" id="temperature" name="temperature">
+            <label for="scale">Select Scale:</label>
+            <select id="scale" name="scale">
+                <option value="celsius">Celsius (°C)</option>
+                <option value="fahrenheit">Fahrenheit (°F)</option>
+                <option value="kelvin">Kelvin (K)</option>
+            </select>
+            <button onclick="convertTemperature()">Convert</button>
+            <div id="result"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Temperature Measurement Website</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
